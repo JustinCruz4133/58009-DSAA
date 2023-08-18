@@ -1,0 +1,12 @@
+class rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length * self.width
+    def display(self):
+        print("\n\nThe Area of the Rectangle is ", round(self.area(), 2))
+
+print("---Welcome to Rectangle Area Calculator---\n\n")
+x = rectangle(float(input("Enter the Length of the rectangle: ")), float(input("Enter the Width of the rectangle: ")))
+x.display()
